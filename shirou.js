@@ -1,3 +1,4 @@
+//¿Qué haces leyendo el código de mi firma? (?) Holi. 
 var i=0;
 $('.shero').each(function(){
     i++;
