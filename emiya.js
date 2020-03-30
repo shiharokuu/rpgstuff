@@ -33,7 +33,7 @@ for (j = 1; j <=i; j++) {
 	var sheroSays = quotes[vID][Math.floor(Math.random() *quotes[vID].length)];
 	var url="https://www.youtube.com/embed/" + ytCode + "?controls=0&modestbranding=1&rel=0";
 	document.getElementById("shero" + j).src = url;
-	document.getElementById("sheroQuote" + j).textContent='"[SIZE=5][color=orange]'+sheroSays+'[/SIZE][/color]"';
+	document.getElementById("sheroQuote" + j).textContent='"'+sheroSays+'"';
 
 
 }
