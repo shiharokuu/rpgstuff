@@ -48,14 +48,23 @@ if(Math.floor(Math.random() * 10)<4){
 
 }
 else{
+	var i=0;
+	$('.sheroSignature').each(function(){
+		i++;
+		var newID='sID'+i;
+		$(this).attr('id',newID);
+		$(this).val(i);
+	});
 	var mp3  = ['https://www.mboxdrive.com/EMIYA%20THEME.mp3'];
 	var sheroIMG = ['https://i.imgur.com/eTh5L4z.gif'];
 	var sheroQuotes = ["Just because you're correct doesn't mean you're right","I don't mind losing to someone, but I won't be beaten by myself."];
-	var trace1 = Math.floor(Math.random() * mp3.length);
-	var trace2 = Math.floor(Math.random() * sheroQuotes.length);
-	var sheroMusic = '<audio  src="' + mp3[trace1] + '"></audio>'
-	var imgCode ='<img src="'+ sheroIMG[trace1] + '" alt="Shero" class="sheroImage">';
-	var sheroSays = '<div class="sheroText">"' + sheroQuotes[trace2] +'"</div>';
-	var css = '<link rel="stylesheet" type="text/css" href="https://rawcdn.githack.com/shiharokuu/rpgstuff/8f517ee99427b4030c428eed375bb50d950895fd/sheroStyle.css">'
-	document.getElementById("sheroSignature").innerHTML=sheroMusic+imgCode+sheroSays+css;
+	for (j = 1; j <=i; j++) {
+		var trace1 = Math.floor(Math.random() * mp3.length);
+		var trace2 = Math.floor(Math.random() * sheroQuotes.length);
+		var sheroMusic = '<audio  src="' + mp3[trace1] + '"></audio>'
+		var imgCode ='<img src="'+ sheroIMG[trace1] + '" alt="Shero" class="sheroImage">';
+		var sheroSays = '<div class="sheroText">"' + sheroQuotes[trace2] +'"</div>';
+		var css = '<link rel="stylesheet" type="text/css" href="https://rawcdn.githack.com/shiharokuu/rpgstuff/8f517ee99427b4030c428eed375bb50d950895fd/sheroStyle.css">'
+		document.getElementById("sID" + j).innerHTML=sheroMusic+imgCode+sheroSays+css;
+	}
 }
