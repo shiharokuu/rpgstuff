@@ -37,7 +37,7 @@ if(Math.floor(Math.random() * 10)<5){
 	for (j = 1; j <=i; j++) {
 		var vID = Math.floor(Math.random() * videos.length);
 		var ytCode = videos[vID];
-		var sheroSays = '<span style="font-style: italic;font-weight: bold;color:#e2664a;" >"' + quotes[vID][Math.floor(Math.random() *quotes[vID].length)] + '"</span><br>';
+		var sheroSays = '<span style="font-style: italic;font-weight: bold;color:#FFA500;font-size: 15px;" >"' + quotes[vID][Math.floor(Math.random() *quotes[vID].length)] + '"</span><br>';
 		var url="https://www.youtube.com/embed/" + ytCode + "?controls=0&modestbranding=1&rel=0";
 		var sheroVideo = '<iframe src ="' + url +'" width="440" height="240"  frameborder="0" allowfullscreen></iframe>'
 		document.getElementById("sID" + j).innerHTML=sheroSays+sheroVideo;
