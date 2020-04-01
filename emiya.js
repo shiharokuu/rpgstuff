@@ -3,7 +3,7 @@
 if(typeof checkPlayer == 'undefined'){
      audiojs.events.ready(function() {
         audiojs.createAll();
-	var checkPlayer = 0;
+	window.checkPlayer = 0;
       });
 }
 
