@@ -1,9 +1,9 @@
 //By Damian o sea el Shero/Toshi
 //¿Qué haces leyendo el código de mi firma? (?) Holi. 
-if(checkF==null){
+if(typeof checkPlayer == 'undefined'){
      audiojs.events.ready(function() {
         audiojs.createAll();
-	var checkF = 0;
+	var checkPlayer = 0;
       });
 }
 
