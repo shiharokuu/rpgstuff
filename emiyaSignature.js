@@ -1,4 +1,12 @@
-
+ if(typeof trace === 'undefined'){
+	window.trace=0;
+ }
+ if((trace=trace+1) ==1){
+	console.log("if inside first script: " + trace);
+     audiojs.events.ready(function() {
+        audiojs.createAll();
+      });
+}
 if(Math.floor(Math.random() * 10)<4){
 	var i=0;
 	$('.shero').each(function(){
@@ -39,16 +47,6 @@ if(Math.floor(Math.random() * 10)<4){
 
 }
 else{
-	if(typeof trace === 'undefined'){
-		window.trace=0;
-	}
-	if((trace=trace+1) ==1){
-		console.log("if inside first script: " + trace);
-		 audiojs.events.ready(function() {
-			audiojs.createAll();
-		  });
-	}
-
 	var mp3  = ['https://www.mboxdrive.com/EMIYA%20THEME.mp3'];
 	var sheroIMG = ['https://i.imgur.com/eTh5L4z.gif'];
 	var sheroQuotes = ["Just because you're correct doesn't mean you're right","I don't mind losing to someone, but I won't be beaten by myself."];
