@@ -1,5 +1,9 @@
 //By Damian o sea el Shero/Toshi
 //¿Qué haces leyendo el código de mi firma? (?) Holi. 
+     audiojs.events.ready(function() {
+        audiojs.createAll();
+      });
+
 
 var i=0;
 $('.shero').each(function(){
