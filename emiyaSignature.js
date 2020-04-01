@@ -1,3 +1,8 @@
+ //By Damian o sea el Shero/Toshi
+//¿Qué haces leyendo el código de mi firma? (?) Holi. 
+ 
+ 
+ //Esta madre es para que no haya problema al hacer load el estilo del audio player
  if(typeof trace === 'undefined'){
 	window.trace=0;
  }
@@ -8,23 +13,17 @@
       });
 }
 
-if(Math.floor(Math.random() * 10)<4){
-	var i=0;
-	$('.shero').each(function(){
+//Esta madre es para que no haya problema con los ids, son unos cabrones porque se repite la firma(?)
+var i=0;
+	$('.sheroSignature').each(function(){
 		i++;
-		var newID='shero'+i;
+		var newID='sID'+i;
 		$(this).attr('id',newID);
 		$(this).val(i);
 	});
 
-	var i=0;
-	$('.sheroQuote').each(function(){
-		i++;
-		var newID='sheroQuote'+i;
-		$(this).attr('id',newID);
-		$(this).val(i);
-	});
-
+//Si me das número menor a 5, dame un vídeo y si es mayor dame una firmita
+if(Math.floor(Math.random() * 10)<5){
 	var j;
 	var videos = ['qnlzyCCgFBM', 't3dIokufs0M','CWoynz0daB8'];    
 	var quotes = [
@@ -38,33 +37,27 @@ if(Math.floor(Math.random() * 10)<4){
 	for (j = 1; j <=i; j++) {
 		var vID = Math.floor(Math.random() * videos.length);
 		var ytCode = videos[vID];
-		var sheroSays = quotes[vID][Math.floor(Math.random() *quotes[vID].length)];
+		var sheroSays = '[SIZE=5][color=orange]<span style="font-style: italic;" >' + quotes[vID][Math.floor(Math.random() *quotes[vID].length)] + '</span>[/SIZE][/color]<br>';
 		var url="https://www.youtube.com/embed/" + ytCode + "?controls=0&modestbranding=1&rel=0";
-		
-		document.getElementById("shero" + j).src = url;
-		document.getElementById("sheroQuote" + j).textContent='"'+sheroSays+'"';
+		var sheroVideo = '<iframe src ="' + url +'" width="440" height="240"  frameborder="0" allowfullscreen></iframe>'
+		document.getElementById("sID" + j).innerHTML=sheroSays+sheroVideo;
 	}
 
 
 }
 else{
-	var i=0;
-	$('.sheroSignature').each(function(){
-		i++;
-		var newID='sID'+i;
-		$(this).attr('id',newID);
-		$(this).val(i);
-	});
-	var mp3  = ['https://www.mboxdrive.com/EMIYA%20THEME.mp3'];
-	var sheroIMG = ['https://i.imgur.com/eTh5L4z.gif'];
-	var sheroQuotes = ["Just because you're correct doesn't mean you're right","I don't mind losing to someone, but I won't be beaten by myself."];
+	var mp3  = ['https://www.mboxdrive.com/EMIYA%20THEME.mp3','https://www.mboxdrive.com/09.LAST%20STARDUST.mp3','https://www.mboxdrive.com/10.Brave%20Shine%20.mp3','https://www.mboxdrive.com/01.%20THIS%20ILLUSION.mp3','https://www.mboxdrive.com/Hikari.mp3','https://www.mboxdrive.com/fatesoundtrack1.mp3','https://www.mboxdrive.com/Kishi.mp3'];
+	var sheroIMG = ['https://i.imgur.com/eTh5L4z.gif','https://i.imgur.com/htb7gFL.gif','https://i.imgur.com/aEbn48m.gif','https://i.imgur.com/qUZwpFM.gif','https://i.imgur.com/EBzl95t.gif','https://i.imgur.com/OeEHBwT.gif','https://i.imgur.com/WOrpwg9.gif','https://i.imgur.com/RvlTTWT.gif','https://i.imgur.com/fChmVqA.gif'];
+	var sheroQuotes = ["Just because you're correct doesn't mean you're right","I don't mind losing to someone, but I won't be beaten by myself.","I don't dream of a world without conflicts. I just want people in my view not to cry.","I don't do these things to be appreciated. I have no intention of being praised as a hero","I will never regret my path. I won't regret it, not matter what may happen.","I don't want to become a hero of justice... I'm going to become one!","Even if it's impossible. I won't turn back. My dream is not wrong!","I just want a result where everybody would be happy","I know my dream isn't... Even if I'm a fraud, I know my dream isn't wrong!","Even if my life is full of hypocrisy, I'll keep on striving to be a hero of justice.","If you walk down the path that you believe is right, you cannot be wrong.","Helping other people is our responsibility. And no matter what I'm gonna live by that.","Just because you're correct doesn't mean you're right"];
 	for (j = 1; j <=i; j++) {
 		var trace1 = Math.floor(Math.random() * mp3.length);
 		var trace2 = Math.floor(Math.random() * sheroQuotes.length);
+		var trace3 = Math.floor(Math.random() * sheroIMG.length);
 		var sheroMusic = '<audio  src="' + mp3[trace1] + '"></audio>'
-		var imgCode ='<img src="'+ sheroIMG[trace1] + '" alt="Shero" class="sheroImage">';
+		var imgCode ='<img src="'+ sheroIMG[trace3] + '" alt="Shero" class="sheroImage">';
 		var sheroSays = '<div class="sheroText">"' + sheroQuotes[trace2] +'"</div>';
 		var css = '<link rel="stylesheet" type="text/css" href="https://rawcdn.githack.com/shiharokuu/rpgstuff/8f517ee99427b4030c428eed375bb50d950895fd/sheroStyle.css">'
 		document.getElementById("sID" + j).innerHTML=sheroMusic+imgCode+sheroSays+css;
 	}
 }
+
