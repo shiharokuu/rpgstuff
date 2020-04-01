@@ -1,11 +1,15 @@
 //By Damian o sea el Shero/Toshi
 //¿Qué haces leyendo el código de mi firma? (?) Holi. 
-if(typeof checkPlayer == 'undefined'){
+ if(typeof trace === 'undefined'){
+	window.trace=0;
+ }
+ if((trace=trace+1) ==1){
+	console.log("if inside first script: " + trace);
      audiojs.events.ready(function() {
         audiojs.createAll();
-	window.checkPlayer = 0;
       });
 }
+
 
 var i=0;
 $('.shero').each(function(){
