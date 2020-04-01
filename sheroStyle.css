@@ -1,0 +1,26 @@
+.sheroContainer {
+  position: relative;
+  width: 100%;
+  max-width: 540px;
+}
+
+.sheroImage {
+ 
+  border: 6px solid #e2664a;
+  border-top: none;
+  margin-bottom: -60px;
+
+}
+
+.sheroText {
+  width:552px;
+  background-color:#e2664a;
+  color: #f1f1f1; 
+  text-shadow:  1px 1px 1px #000, 2px 2px 2px black; 
+  font-size:15px;
+  text-align: center;
+  position: relative;
+  margin-bottom: 50px  
+
+}
+
