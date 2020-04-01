@@ -1,12 +1,11 @@
 //By Damian o sea el Shero/Toshi
 //¿Qué haces leyendo el código de mi firma? (?) Holi. 
+if(checkF==null){
      audiojs.events.ready(function() {
-	if(checkF==null){
-	var checkF = 0;
         audiojs.createAll();
-	}
+	var checkF = 0;
       });
-
+}
 
 var i=0;
 $('.shero').each(function(){
