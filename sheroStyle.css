@@ -11,10 +11,11 @@
   background-color:#e2664a;
   color: #f1f1f1; 
   text-shadow:  1px 1px 1px #000, 2px 2px 2px black; 
-  font-size:15px;
+  font-size:18px;
+  font-family: 'Open Sans Condensed', sans-serif;
   text-align: center;
   position: relative;
-  margin-bottom: 50px  
+  margin-bottom: 50px;
 
 }
 
