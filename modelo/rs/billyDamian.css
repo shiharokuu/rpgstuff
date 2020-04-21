@@ -90,7 +90,7 @@ background:#000;
   right: 0;
   opacity: 0;
   transition: 0.9s ease;
-  background-color: #000;
+  background-color:#0d0d0d;
 }
 
 .marvelContainer:hover .shazaPost {
