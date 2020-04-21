@@ -3,12 +3,13 @@
 .marvelContainer {
   border: 20px solid #b01703;
   border-top: none;
+  border-bottom:none;
   margin-bottom: -60px;
   position:relative;
 }
 
+
 .shazaBanner {
-  border-bottom: 15px solid #b01703;
   border-top: 15px solid #b01703;
   position:relative;
 }
@@ -19,7 +20,6 @@
   font-family: 'Bangers', cursive;
   color:#f8f8ff;
   text-shadow: 2px 2px #000;
-
 }
 .shazaRS{
   position:relative;
@@ -173,7 +173,16 @@ background:#000;
   top: 80%;
 }
 
-a.credits:link { text-decoration:none; }
-a.credits:visited { text-decoration:none; }
-a.credits:hover { text-decoration:none; }
-a.credits:active { text-decoration:none; }
+.credits{
+  background-color:#b01703;
+  font-family: 'Bangers', cursive;
+  color:#f8f8ff;
+  text-shadow: 2px 2px #000;
+  border: 20px solid #b01703;
+  border-top:none;
+  border-bottom:none;
+}
+a.creditsLink:link { text-decoration:none;color:#f8f8ff; text-shadow: 2px 2px #000;}
+a.creditsLink:visited { text-decoration:none; color:#f8f8ff;text-shadow: 2px 2px #000;}
+a.creditsLink:hover { text-decoration:none; color:#f8f8ff;text-shadow: 2px 2px #000;}
+a.creditsLink:active { text-decoration:none; color:#f8f8ff;text-shadow: 2px 2px #000;}
