@@ -6,6 +6,11 @@
 
 }
 
+.audiojs .scrubber {
+    width: 400px;
+    background: #000000;
+}
+
 .sheroText {
   width:552px;
   background-color:#e2664a;
