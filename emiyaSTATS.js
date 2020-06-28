@@ -14,6 +14,4 @@ var mana = document.getElementById("mp").getAttribute("mana");
 
 document.getElementById("hp").innerHTML = getHP(vit,res);
 document.getElementById("mp").innerHTML = getMP(prana,mana);
-
- var emiyaNeimo = document.getElementsByClassName("mp-namesp")[0];
- emiyaNeimo.getElementsByClassName("mp-namesp")[0].innerHTML = "Emiya Shirou (ARCHER)";
+document.getElementsByClassName("mp-namesp").innerHTML = "Emiya Shirou (ARCHER)";
