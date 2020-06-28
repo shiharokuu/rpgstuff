@@ -1,3 +1,12 @@
+	var i=0;
+	$('.mp-namesp').each(function(){
+		i++;
+		var newID='emiName'+i;
+		$(this).attr('id',newID);
+		$(this).val(i);
+		
+	});	
+
 function getHP(vit, res) {
   var base = 50;
   return base + (vit*10)+(Math.round(res/2));   // The function returns the HP of my character
@@ -14,4 +23,6 @@ var mana = document.getElementById("mp").getAttribute("mana");
 
 document.getElementById("hp").innerHTML = getHP(vit,res);
 document.getElementById("mp").innerHTML = getMP(prana,mana);
-document.getElementsByClassName("mp-namesp").innerHTML = "Emiya Shirou (ARCHER)";
+
+document.getElementById("emiName1").innerHTML = "Emiya Shirou (ARCHER)";
+
