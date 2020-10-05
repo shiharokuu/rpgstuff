@@ -20,26 +20,26 @@ function getMP(prana, mana) {
 
 		var j;	
 		for (j = 1; j <=i; j++) {
-        var vit = document.getElementById("hp" + j).getAttribute("vit");
-        var res = document.getElementById("hp" + j).getAttribute("res");
-        document.getElementById("hp" + j).innerHTML = getHP(vit,res);
+        		var vit = document.getElementById("hp" + j).getAttribute("vit");
+        		var res = document.getElementById("hp" + j).getAttribute("res");
+        		document.getElementById("hp" + j).innerHTML = getHP(vit,res);
 			}
 		}
 	
-	var i=0;
+	var e=0;
 	$('.mp').each(function(){
 		i++;
-		var newID='mp'+i;
+		var newID='mp'+e;
 		$(this).attr('id',newID);
-		$(this).val(i);
+		$(this).val(e);
 		
 	});	 
 
-		var j;	
-		for (j = 1; j <=i; j++) {
-        var prana = document.getElementById("mp" + j).getAttribute("prana");
-        var mana = document.getElementById("mp" + j).getAttribute("mana");
-        document.getElementById("mp" + j).innerHTML = getHP(vit,res);
+		var m;	
+		for (m = 1; m <=i; m++) {
+        		var prana = document.getElementById("mp" + m).getAttribute("prana");
+        		var mana = document.getElementById("mp" + m).getAttribute("mana");
+        		document.getElementById("mp" + m).innerHTML = getHP(vit,res);
 			}
 		}
 	
