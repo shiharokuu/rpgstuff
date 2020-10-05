@@ -18,6 +18,15 @@ function getMP(prana, mana) {
 		
 	});	 
 
+	var i=0;
+	$('.mana').each(function(){
+		i++;
+		var newID='mp'+i;
+		$(this).attr('id',newID);
+		$(this).val(i);
+		
+	});	 
+
 
 
 
