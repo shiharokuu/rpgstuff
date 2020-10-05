@@ -12,7 +12,7 @@ function getMP(prana, mana) {
 	var i=0;
 	$('.hp').each(function(){
 		i++;
-		var newID='hp'+i;
+		var newID='hp0'+i;
 		$(this).attr('id',newID);
 		$(this).val(i);
 		
@@ -20,16 +20,16 @@ function getMP(prana, mana) {
 
 		var j;	
 		for (j = 1; j <=i; j++) {
-        		var vit = document.getElementById("hp" + j).getAttribute("vit");
-        		var res = document.getElementById("hp" + j).getAttribute("res");
-        		document.getElementById("hp" + j).innerHTML = getHP(vit,res);
+        		var vit = document.getElementById("hp0" + j).getAttribute("vit");
+        		var res = document.getElementById("hp0" + j).getAttribute("res");
+        		document.getElementById("hp0" + j).innerHTML = getHP(vit,res);
 			}
 		}
 	
 	var e=0;
 	$('.mp').each(function(){
 		i++;
-		var newID='mp'+e;
+		var newID='mp0'+e;
 		$(this).attr('id',newID);
 		$(this).val(e);
 		
@@ -37,9 +37,9 @@ function getMP(prana, mana) {
 
 		var m;	
 		for (m = 1; m <=i; m++) {
-        		var prana = document.getElementById("mp" + m).getAttribute("prana");
-        		var mana = document.getElementById("mp" + m).getAttribute("mana");
-        		document.getElementById("mp" + m).innerHTML = getHP(vit,res);
+        		var prana = document.getElementById("mp0" + m).getAttribute("prana");
+        		var mana = document.getElementById("mp0" + m).getAttribute("mana");
+        		document.getElementById("mp0" + m).innerHTML = getHP(vit,res);
 			}
 		}
 	
