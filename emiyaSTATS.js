@@ -1,11 +1,3 @@
-	var i=0;
-	$('.mp-namesp').each(function(){
-		i++;
-		var newID='emiName'+i;
-		$(this).attr('id',newID);
-		$(this).val(i);
-		
-	});	
 
 function getHP(vit, res) {
   var base = 50;
@@ -23,6 +15,4 @@ var mana = document.getElementById("mp").getAttribute("mana");
 
 document.getElementById("hp").innerHTML = getHP(vit,res);
 document.getElementById("mp").innerHTML = getMP(prana,mana);
-
-document.getElementById("emiName1").innerHTML = "Emiya Shirou (ARCHER)";
 
