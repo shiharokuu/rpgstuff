@@ -35,7 +35,7 @@ function getMP(prana, mana) {
 		var prana = document.getElementById("mp" + j).getAttribute("prana");
         	var mana = document.getElementById("mp" + j).getAttribute("mana");
         	document.getElementById("hp" + j).innerHTML = getHP(vit,res);
-		document.getElementById("hp" + j).innerHTML = getMP(prana,mana);
+		document.getElementById("mp" + j).innerHTML = getMP(prana,mana);
 	}
 	
 
