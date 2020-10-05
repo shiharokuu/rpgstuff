@@ -27,17 +27,6 @@ function getMP(prana, mana) {
 		
 	});	 
 	
-	var j;	
-	for (j = 1; j <=i; j++) {
-        	var vit = document.getElementById("hp" + j).getAttribute("vit");
-        	var res = document.getElementById("hp" + j).getAttribute("res");
-		var prana = document.getElementById("mp" + j).getAttribute("prana");
-        	var mana = document.getElementById("mp" + j).getAttribute("mana");
-        	document.getElementById("hp" + j).innerHTML = getHP(vit,res);
-		document.getElementById("hp" + j).innerHTML = getMP(prana,mana);
-		}
-	}
-
 
 
 
