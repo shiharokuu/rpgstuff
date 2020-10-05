@@ -26,14 +26,7 @@ function getMP(prana, mana) {
 			}
 		}
 	
-	var e=0;
-	$('.mp').each(function(){
-		i++;
-		var newID='mp0'+e;
-		$(this).attr('id',newID);
-		$(this).val(e);
-		
-	});	 
+	 
 
 		var m;	
 		for (m = 1; m <=i; m++) {
