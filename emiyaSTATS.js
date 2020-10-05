@@ -10,7 +10,7 @@ function getMP(prana, mana) {
 
 //Esta madre es para que no haya problema con los ids, son unos cabrones porque se repite la firma(?)
 	var i=0;
-	$('.hp').each(function(){
+	$('.health').each(function(){
 		i++;
 		var newID='hp0'+i;
 		$(this).attr('id',newID);
